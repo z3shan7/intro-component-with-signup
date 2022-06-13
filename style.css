@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    /* ### Primary */
+
+   --Red: hsl(0, 100%, 74%);
+   --Green: hsl(154, 59%, 51%);
+
+/* ### Accent */
+
+   --Blue: hsl(248, 32%, 49%);
+
+/* ### Neutral */
+
+   --Dark-Blue: hsl(249, 10%, 26%) ;
+   --Grayish-Blue: hsl(246, 25%, 77%);
+
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+body{
+   background-image: url(./images/bg-intro-desktop.png) ;
+   background-color: var(--Red);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;  
+   font-family: 'Poppins', sans-serif;
+}
+.main-container{
+    max-width: 1270px;
+    margin: auto ;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.title-section{
+    flex-basis: 50%;
+}
+.title-header{
+    font-size: 3.8rem;
+    color: #FFF;
+    line-height: 65px;
+}
+.title-text{
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #FFF;
+    font-weight: 400;
+    line-height: 30px;
+}
+.form-section{
+    flex-basis: 50%;
+    
+}
+.offers{
+    background-color: var(--Blue);
+    text-align: center;
+    padding: 1.3rem 0;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 200;
+    -webkit-box-shadow: 0px 10px 6px -2px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 10px 6px -2px rgba(0,0,0,0.48);
+    box-shadow: 0px 10px 6px -2px rgba(0,0,0,0.48);
+}
+.offers span{ font-weight: 600; }
+
+.trail-form{
+    background: white;
+    padding: 1.5rem 2.5rem;
+    border-radius: 0.5rem;
+    margin: auto;
+    position: relative;
+    -webkit-box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.48);
+box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.48);
+}
+
+input{
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin:12px auto;
+    border: 2px solid var(--Grayish-Blue);
+    border-radius: 0.2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--Dark-Blue);
+    font-weight: 600;
+    
+}
+
+input::placeholder{
+    font-size: 15px;
+    font-weight: 600;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+.submit-button{
+    margin-top: 20px;
+    background-color: var(--Green);
+    font-size: 0.9rem;
+    color: #FFF;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: 0;
+}
+.submit-button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.agree{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--Grayish-Blue);
+}
+.agree span{
+    color: var(--Red);
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form-control {
+    padding-bottom: 5px;
+    position: relative;
+}
+.form-control img{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: none;
+    
+}
+.form-control .alert-example{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    color: var(--Red);
+    font-weight: 600;
+    display: none;
+    
+
+}
+.form-control small{
+    display: none;
+    font-size: 0.8rem;
+    color: var(--Red);
+    text-align: right;
+ 
+}
+.form-control.success input {
+    border-color: var(--Green);
+  }
+  
+.form-control.error input  {
+    border-color: var(--Red);
+}
+.form-control.error small{
+    display: block;
+}
+.form-control.error img  {
+    display: block;
+}
+.form-control.error input::placeholder  {
+    opacity: 0;
+}
+.form-control.error .alert-example{
+    display: block;
+}
+
+
+@media screen and (max-width:1350px){
+    body{
+        padding: 3rem;
+    }
+
+}
+@media screen and (max-width:950px) {
+    body{
+        padding: 0;
+    }
+    .main-container{
+        flex-direction: column;
+        
+    }
+    .title-header{
+        font-size: 2.4rem;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        line-height: 35px;
+        margin-top: 40px;
+    }
+    .title-text{
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        margin-top: 20px;
+        line-height: 25px;
+
+    }
+    .offers{
+        margin-top: 30px;
+        font-size: 15px;
+        padding: 1.2rem ;
+        
+       
+    }
+    .form-section{
+        width: 80%; 
+    
+ }
+}
+@media screen and (max-width:570px){
+
+    .title-header{
+        font-size: 1.5rem;
+    }
+    .trail-form{
+        padding: 1.2rem 1.5rem;
+
+    
+
+    }
+    .form-control .alert-example{
+        font-size: 12px;
+        left: 30px;
+    }
+    .form-control{
+        padding-bottom: 0;
+    }
+    input{
+        height: 50px;
+
+    }
+    .form-control img{
+        right: 30px;
+        top: 15px;
+    }
+    .agree{
+        margin-bottom: 0;
+    }
+   
+
+}
+    
