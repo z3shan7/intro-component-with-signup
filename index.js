@@ -1,6 +1,6 @@
 const form = document.getElementById('form');
-const firstName = document.getElementById('First name')
-const lastName = document.getElementById('Last name')
+const firstName = document.getElementById('First-name')
+const lastName = document.getElementById('Last-name')
 const email = document.getElementById('Email')
 const password = document.getElementById('Password')
 
