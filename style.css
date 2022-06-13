@@ -99,7 +99,7 @@ input{
     height: 60px;
     margin:12px auto;
     border: 2px solid var(--Grayish-Blue);
-    border-radius: 0.2rem;
+    border-radius: 0.6rem;
     padding: 1rem;
     font-size: 1.2rem;
     color: var(--Dark-Blue);
@@ -250,11 +250,15 @@ input:focus::-webkit-input-placeholder {
     }
     input{
         height: 50px;
+        font-size: 0.7rem;
 
     }
     .form-control img{
         right: 30px;
         top: 15px;
+    }
+    input::placeholder{
+        font-size: 12px;
     }
     .agree{
         margin-bottom: 0;
