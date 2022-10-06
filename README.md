@@ -31,7 +31,8 @@ Your users should be able to:
 ### Links
 
 
-- Live Site URL: [](https://z3shan7.github.io/intro-component-with-signup/)
+- Live Site URL: ![](https://z3shan7.github.io/intro-component-with-signup/)
+
 
 ## My process
 
